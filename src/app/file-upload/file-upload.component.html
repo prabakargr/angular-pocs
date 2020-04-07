@@ -1,0 +1,6 @@
+<form [formGroup]="documentForm">
+  <input type="file" #file formControlName="uploadFile" (change)="getFileName($event.target.files)">
+  <button type="button" (click)="addDocumentFiles()">
+    Add
+  </button>
+</form>
